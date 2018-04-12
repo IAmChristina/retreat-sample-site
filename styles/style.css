@@ -3,28 +3,50 @@
   padding: 0;
   margin:0;
   box-sizing: border-box;
-  /* border: 1px solid yellow; */
 }
 
-[class*=grid-], [class*=grid_], [class~=grid]{
+/* Universal Styles */
+
+[class*=grid-], [class*=grid_], [class~=grid],[class~=grid][class*=col-]{
   margin: 0;
 }
 
-body, section{
-  font-family: 'Raleway', sans-serif;
-  /* font-size: 1.2rem; */
-  /* color: #91919e; */
-  padding: 2% 1%;
-  margin: 2%;
+[class*grid-][class*equalHeight]>[class*=col]{
+  display:block;
+  /* This overrides a quirk where contents inside of equal height containers become columns themselves */
 }
 
-.bg-image{
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-width: 100%;
-  height: 50vh;
+body{
+  font-family: 'Lato', sans-serif;
+  /* font-size: 1.2rem; */
+  color: #91919e;
+  /* padding: 2% 1%;
+  margin: 2%; */
+}
 
+section{
+  padding: 10vh 5%;
+}
+
+h1, h2, h3, h4{
+  text-transform: uppercase;
+  margin-bottom: .5em;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+.col, .col-4, .col-3, .col-6, .col-12{
+  padding: 5%;
+}
+
+.less-padding{
+  padding: 3%;
+}
+
+.no-padding{
+  padding:0;
 }
 
 .green-background{
@@ -41,4 +63,84 @@ body, section{
 
 .centered{
   text-align: center;
+}
+
+.bg-image{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* max-width: 100%; */
+  min-height: 40vh;
+}
+
+.button{
+  background-color: inherit;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: .9rem;
+  background-color: #20B2AA;
+  color: white;
+  padding: 1% 3%;
+  border-radius: 15%;
+  margin: 1% auto;
+}
+
+.button:hover{
+  /* border: 1px solid white; */
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* header */
+.banner-image{
+  background-position: 50% 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75vh;
+}
+
+.banner-text{
+  text-align: center;
+  color: white;
+  padding-top: 10%;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+/* Icon section */
+
+.fab, .fa{
+  font-size: 3em;
+  margin: 0 0 .5rem 0;
+}
+
+/* Form */
+
+input, textarea{
+  -webkit-appearance: none;
+font-family: 'Lato';
+padding: 1rem;
+margin: 1em auto;
+font-size: .8rem;
+border: gray 1px solid;
+display: block;
+width: 100%;
+vertical-align: top;
+}
+
+textarea{
+  min-height: 80%;
+}
+
+input[type="submit"]{
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 1% 4%;
+  text-align: center;
+}
+
+form div.col-4, form div.col-12{
+  padding: 1%;
 }
