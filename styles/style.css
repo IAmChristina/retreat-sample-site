@@ -80,9 +80,10 @@ h2{
   font-size: .9rem;
   background-color: #20B2AA;
   color: white;
-  padding: 1% 3%;
+  padding: 1% 4%;
   border-radius: 15%;
-  margin: 1% auto;
+  margin: 2% auto 0 auto;
+  width: auto;
 }
 
 .button:hover{
@@ -133,12 +134,17 @@ textarea{
   min-height: 80%;
 }
 
-input[type="submit"]{
-  width: auto;
-  display: block;
-  margin: 0 auto;
-  padding: 1% 4%;
-  text-align: center;
+input.button{
+background-color: inherit;
+font-family: 'Lato', sans-serif;
+text-align: center;
+font-size: .9rem;
+background-color: #20B2AA;
+color: white;
+padding: 1% 4%;
+border-radius: 15%;
+margin: 0 auto 0 auto;
+width: auto;
 }
 
 form div.col-4, form div.col-12{
