@@ -5,9 +5,9 @@
     <title>Retreat</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" /> -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script> -->
     <link rel="stylesheet" type="text/css" href="styles/gridlex.min.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
 
@@ -25,9 +25,9 @@
 <!-- Register now banner-------------->
 
 <section class="green-background white-font centered">
-  <h3 class=>Register Now - 20% Off</h3>
+  <h2 class=>Register Now - 20% Off</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem</p>
-  <button class="button"type="button" name="button">REGISTER</button>
+  <a href="#register"><button class="button"type="button" name="button">REGISTER</button></a>
 </section>
 
 <!-- Icons Grid -------------->
@@ -106,7 +106,7 @@
 <!-- End Pic Grid -------------->
 
 <!-- form ---------------------->
-<section class="centered">
+<section id="register" class="centered">
   <h2 class="green-font">Register Now - Save 20%</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   <form class="grid-center" action="https://formspree.io/christina2785@gmail.com" method="POST">
@@ -160,8 +160,16 @@
 
 </body>
 
-<!--- Javascript ---------->
-<!--
-  <script type="text/javascript" src="javascript.js"> </script> -->
+<script>
+$(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') ==
+    this.pathname.replace(/^\//,'') && location.hostname ==
+    this.hostname) {         var target = $(this.hash);         target = target.length ? target : $('[name=' +
+         this.hash.slice(1) +']');
+         if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 1000);         return false;       }     }  });});</script>
 
 </body>

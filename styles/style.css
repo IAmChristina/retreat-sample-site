@@ -150,3 +150,16 @@ width: auto;
 form div.col-4, form div.col-12{
   padding: 1%;
 }
+
+
+/* Media Queries */
+
+@media(max-width:48em) {
+/* These classes flip the order of the columns on a mobile layout so that we don't have two images touching. Try commenting them out and see the difference */
+    .mob-flip {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse; }
+    .mob-flip div {
+        width: 100%; }
