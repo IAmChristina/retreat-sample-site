@@ -50,11 +50,11 @@ h2{
 }
 
 .green-background{
-  background-color: #20B2AA;
+  background-color: #0399a8;
 }
 
 .green-font{
-  color:#20B2AA;
+  color:#0399a8;
 }
 
 .white-font{
@@ -79,7 +79,7 @@ h2{
   font-family: 'Lato', sans-serif;
   text-align: center;
   font-size: .9rem;
-  background-color: #20B2AA;
+  background-color: #0399a8;
   color: white;
   padding: 1% 4%;
   border-radius: 15%;
@@ -92,6 +92,8 @@ h2{
   font-weight: bold;
   display: inline-block;
   filter: opacity(70%);
+  background-color: white;
+  color: #0399a8;
 }
 
 /* header */
@@ -100,6 +102,7 @@ h2{
   background-size: cover;
   background-repeat: no-repeat;
   height: 75vh;
+  background-attachment: fixed;
 }
 
 .banner-text{
@@ -109,6 +112,7 @@ h2{
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.2em;
+  text-shadow: 1px 1px 1px #c9c9ca, 1px 1px 1px #c9c9ca;
 }
 
 /* Icon section */
@@ -124,7 +128,7 @@ input, textarea{
   -webkit-appearance: none;
 font-family: 'Lato';
 padding: 1rem;
-margin: 1em auto;
+margin: .5em auto;
 font-size: .8rem;
 border: gray 1px solid;
 display: block;
@@ -133,7 +137,11 @@ vertical-align: top;
 }
 
 textarea{
-  min-height: 80%;
+  min-height: 98%;
+}
+
+input{
+  height: 30%;
 }
 
 input.button{
@@ -141,7 +149,7 @@ background-color: inherit;
 font-family: 'Lato', sans-serif;
 text-align: center;
 font-size: .9rem;
-background-color: #20B2AA;
+background-color: #0399a8;
 color: white;
 padding: 1% 4%;
 border-radius: 15%;
