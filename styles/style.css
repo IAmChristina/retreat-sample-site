@@ -108,12 +108,21 @@ h2{
 .banner-text{
   text-align: center;
   color: white;
-  padding-top: 10%;
+  padding-top: 8%;
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.2em;
   text-shadow: 1px 1px 1px #c9c9ca, 1px 1px 1px #c9c9ca;
+  margin-bottom: 1%;
 }
+
+.banner-subheading{
+  color: white;
+  text-shadow: 1px 1px 1px #c9c9ca, 1px 1px 1px #c9c9ca;
+  font-size: 1.5rem;
+  padding: 0 22%;
+}
+
 
 /* Icon section */
 
@@ -162,18 +171,4 @@ form div.col-4, form div.col-12{
 }
 
 
-/* Media Queries */
-
-/* @media(max-width:48em) { */
-/* These classes flip the order of the columns on a mobile layout so that we don't have two images touching. Try commenting them out and see the difference */
-    /* .mob-flip {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse; }
-    .mob-flip div {
-        width: 100%; }
-
-    .bg-img{
-
-    } */
+/********** Media Queries ***********/
