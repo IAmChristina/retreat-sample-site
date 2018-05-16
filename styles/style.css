@@ -22,6 +22,7 @@ body{
   color: #91919e;
   /* padding: 2% 1%; */
   /* margin: 2%; */
+  line-height: 1.3rem;
 }
 
 section{
@@ -49,6 +50,10 @@ h2{
   padding:0;
 }
 
+.top-padding{
+  padding-top: 2%;
+}
+
 .green-background{
   background-color: #0399a8;
 }
@@ -59,6 +64,12 @@ h2{
 
 .white-font{
   color: white;
+}
+
+.gray-font{
+  color:#484646;
+  padding-top: 4%;
+  font-size: 1.4rem;
 }
 
 .centered{
@@ -96,6 +107,17 @@ h2{
   color: #0399a8;
 }
 
+li, ul{
+  padding: 1% 0;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.small-font{
+  font-size: .9rem;
+  line-height: 1.2rem;
+}
+
 /* header */
 .banner-image{
   background-position: 50% 20%;
@@ -118,15 +140,17 @@ h2{
 
 .banner-subheading{
   color: white;
-  text-shadow: 1px 1px 1px #c9c9ca, 1px 1px 1px #c9c9ca;
-  font-size: 1.5rem;
-  padding: 0 22%;
+  /* text-shadow: 1px 1px 1px #c9c9ca, 1px 1px 1px #c9c9ca;
+  font-size: 1.5rem; */
+  line-height: 1.2em;
+  /* padding: 0 22%; */
+  font-size: 1.6rem;
 }
 
 
 /* Icon section */
 
-.fab, .fa{
+.fab, .fa, .fas{
   font-size: 3em;
   margin: 0 0 .5rem 0;
 }
@@ -170,6 +194,27 @@ height: 3rem;
 form div.col-4, form div.col-12{
   padding: 1%;
 }
+
+
+/********** first pic grid ********/
+
+.text-block{
+  padding: 8%;
+  /* height: 60vh; */
+}
+
+.text-block h2{
+  line-height: 2rem;
+}
+
+
+/********** bottom pic grid ********/
+
+.header-space{
+  line-height: 2rem;
+  text-align: center;
+}
+
 
 
 /********** Media Queries ***********/
