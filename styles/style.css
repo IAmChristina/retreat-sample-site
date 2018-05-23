@@ -32,6 +32,7 @@ section{
 h1, h2, h3, h4{
   text-transform: uppercase;
   margin-bottom: .5em;
+  line-height: 2rem;
 }
 
 h2{
@@ -89,11 +90,11 @@ h2{
   background-color: inherit;
   font-family: 'Lato', sans-serif;
   text-align: center;
-  font-size: .9rem;
+  font-size: 1rem;
   background-color: #0399a8;
   color: white;
-  padding: 1% 4%;
-  border-radius: 15%;
+  padding: 1.5% 4%;
+  border-radius: 10%;
   margin: 2% auto 0 auto;
   width: auto;
 }
@@ -181,11 +182,12 @@ input.button{
 background-color: inherit;
 font-family: 'Lato', sans-serif;
 text-align: center;
-font-size: .9rem;
+font-size: 1rem;
+text-transform: uppercase;
 background-color: #0399a8;
 color: white;
 padding: 1% 4%;
-border-radius: 15%;
+border-radius: 10%;
 margin: 0 auto 0 auto;
 width: 8rem;
 height: 3rem;
@@ -218,3 +220,5 @@ form div.col-4, form div.col-12{
 
 
 /********** Media Queries ***********/
+
+@media and screen(max-width: )
