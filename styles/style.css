@@ -221,7 +221,7 @@ form div.col-4, form div.col-12{
 
 /********** Media Queries ***********/
 
-@media all and (max-width: 768px){
+@media all and (max-width: 1024px){
   .banner-image{
     background-attachment: scroll;
   }
